@@ -1,3 +1,6 @@
+$card-height-mobile: 4rem;
+$card-height-desktop: 6rem;
+
 .title {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -21,10 +24,10 @@
             cursor: pointer; 
             border-radius: 0.25rem 0 0;
             transition: all 0.25s ease-out; 
-            height: 4rem;
+            height: $card-height-mobile;
         
             @media (min-width: 768px) { 
-                height: 6rem;
+                height: $card-height-desktop;
             }
 
             &:before {
@@ -43,10 +46,10 @@
                 height: 100%;
                 float: left;
                 border-radius: 0.25rem;
-                height: 4rem;
+                height: $card-height-mobile;
             
                 @media (min-width: 768px) { 
-                    height: 6rem;
+                    height: $card-height-desktop;
                 }
             }
 
@@ -54,12 +57,12 @@
                 display: inline-block;
                 width: 60%;
                 font-size: xx-small;
-                height: 4rem;
+                height: $card-height-mobile;
                 vertical-align: middle;
                 line-height: 3rem;
 
                 @media (min-width: 768px) { 
-                    height: 6rem;
+                    height: $card-height-desktop;
                     font-size: medium;
                     width: 80%;
                     line-height: 4rem;
@@ -67,7 +70,6 @@
 
                 h3 {
                     margin: 0;
-                    height: 4rem;
                 }
             }
         } 
