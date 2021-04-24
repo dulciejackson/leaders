@@ -1,6 +1,19 @@
 # leaders
 
-## Project setup
+## Getting Started
+
+1. Create an `.env.local` file in the root directory, with two entries:
+```
+VUE_APP_ENDPOINT=<your Prismic endpoint>
+VUE_APP_ACCESS_TOKEN=<your Prismic access token>
+```
+1. Run `npm install` to install dependencies for the project
+1. Run `npm run serve` to run the app locally
+1. Visit localhost:8080 to see the app running!
+
+## Useful Commands
+
+### Installs project dependencies
 ```
 npm install
 ```
@@ -19,6 +32,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
