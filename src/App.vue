@@ -17,5 +17,5 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-@import "./styles/_global.scss";
+@import "./styles/_global";
 </style>

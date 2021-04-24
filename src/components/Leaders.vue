@@ -43,6 +43,6 @@ export default Vue.extend({
 });
 </script>
 
-<style scoped>
-@import "../styles/_leaders.scss";
+<style lang="scss" scoped>
+@import '../styles/_leaders.scss';
 </style>

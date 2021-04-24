@@ -6,79 +6,103 @@
 
 .card-group {
     margin-top: -3rem;
-}
 
-.leader-card { 
-    margin: 1rem;
-    border-radius: 0.25rem;
-    box-shadow: 0 1rem 2rem #edf6f9;
-    border-right: 1rem var(--leader-colour) solid;
-} 
+    .leader-card { 
+        margin: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        box-shadow: 0 1rem 2rem #edf6f9;
+        border-right: 1rem var(--leader-colour) solid;
 
-.leader-img {
-    height: 100%;
-    float: left;
-    border-radius: 0.25rem;
-    height: 5rem;
-}
+        .card-header { 
+            display: block;
+            text-transform: uppercase; 
+            text-align: center;  
+            background: white; 
+            cursor: pointer; 
+            border-radius: 0.25rem 0 0;
+            transition: all 0.25s ease-out; 
+            height: 4rem;
+        
+            @media (min-width: 768px) { 
+                height: 6rem;
+            }
 
-input[type='checkbox'] { 
-    display: none; 
-} 
+            &:before {
+                content: ' ';
+                display: inline-block; 
+                border-top: 5px solid transparent; 
+                border-bottom: 5px solid transparent; 
+                border-left: 5px solid currentColor; 
+                vertical-align: middle; 
+                margin-right: .7rem; 
+                transform: translateY(-2px); 
+                transition: transform .2s ease-out;
+            }
 
-.card-header { 
-    display: block; 
-    text-transform: uppercase; 
-    text-align: center;  
-    background: white; 
-    cursor: pointer; 
-    border-radius: 0.25rem 0 0;
-    transition: all 0.25s ease-out; 
-    height: 5rem;
-} 
+            .leader-img {
+                height: 100%;
+                float: left;
+                border-radius: 0.25rem;
+                height: 4rem;
+            
+                @media (min-width: 768px) { 
+                    height: 6rem;
+                }
+            }
 
-.card-header::before { 
-    content: ' ';
-    display: inline-block; 
-    border-top: 5px solid transparent; 
-    border-bottom: 5px solid transparent; 
-    border-left: 5px solid currentColor; 
-    vertical-align: middle; 
-    margin-right: .7rem; 
-    transform: translateY(-2px); 
-    transition: transform .2s ease-out; 
-} 
+            .leader-name {
+                display: inline-block;
+                width: 60%;
+                font-size: xx-small;
+                height: 4rem;
+                vertical-align: middle;
+                line-height: 3rem;
 
-.toggle:checked+.card-header::before { 
-    transform: rotate(90deg) translateX(-3px); 
-} 
+                @media (min-width: 768px) { 
+                    height: 6rem;
+                    font-size: medium;
+                    width: 80%;
+                    line-height: 4rem;
+                }
 
-.leader-name {
-    display: inline-block;
-    width: 60%;
-    font-size: small;
-}
+                h3 {
+                    margin: 0;
+                    height: 4rem;
+                }
+            }
+        } 
 
-.collapsible-content { 
-    max-height: 0px; 
-    overflow: hidden; 
-    transition: max-height .25s ease-in-out; 
-} 
+        input[type='checkbox'] { 
+            display: none; 
+        } 
 
-.toggle:checked + .card-header + .collapsible-content { 
-    max-height: 500px; 
-} 
+        .collapsible-content { 
+            max-height: 0px; 
+            overflow: hidden; 
+            transition: max-height .25s ease-in-out; 
 
-.toggle:checked+.card-header { 
-    border-bottom-right-radius: 0; 
-    border-bottom-left-radius: 0; 
-} 
+            .content-inner { 
+                background: white; 
+                padding: .5rem 1rem; 
+                border-radius: 0 0 0 0.25rem;
+            }
 
-.collapsible-content .content-inner { 
-    background: white; 
-    padding: .5rem 1rem; 
-    border-radius: 0 0 0 0.25rem;
-}
+            p { margin-bottom: 0; }
+        } 
+
+        .toggle:checked+.card-header { 
+            border-bottom-right-radius: 0; 
+            border-bottom-left-radius: 0; 
+
+            &:before {
+                transform: rotate(90deg) translateX(-3px); 
+            }
+
+            + .collapsible-content { 
+                max-height: 30rem; 
+            } 
+        } 
     
-.collapsible-content p { margin-bottom: 0; }
+    } 
+}
 
