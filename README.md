@@ -7,9 +7,9 @@
 VUE_APP_ENDPOINT=<your Prismic endpoint>
 VUE_APP_ACCESS_TOKEN=<your Prismic access token>
 ```
-1. Run `npm install` to install dependencies for the project
-1. Run `npm run serve` to run the app locally
-1. Visit localhost:8080 to see the app running!
+2. Run `npm install` to install dependencies for the project
+3. Run `npm run serve` to run the app locally
+4. Visit localhost:8080 to see the app running!
 
 ## Useful Commands
 
