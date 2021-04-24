@@ -5,7 +5,7 @@
     <div class="card-group">
         <div v-for="type in document.data.types" :key="type.name.text" class="leader-card" v-bind:style="{'--leader-colour': type.colour}">
             <prismic-image :field="type.exemplar_image" class="leader-img"/>
-            <prismic-rich-text :field="type.name" v-bind:style="{ color: type.colour }"/>
+            <prismic-rich-text :field="type.name" class="leader-name"/>
         </div>
     </div>
   </div>

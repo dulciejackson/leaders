@@ -1,5 +1,5 @@
 .title {
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 2rem;
     background-color: #ffddd2;
 }
@@ -9,9 +9,9 @@
 }
 
 .leader-card {
-    margin: 0.5rem 1rem 0.5rem 1rem;
+    margin: 0.5rem 1rem 0.25rem 1rem;
     height: 5rem;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     box-shadow: 0 1rem 2rem #edf6f9;
     background-color: white;
     border-right: 1rem var(--leader-colour) solid;
@@ -20,5 +20,9 @@
 .leader-img {
     height: 100%;
     float: left;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.leader-name {
+    padding-top: 0.75rem;
 }
